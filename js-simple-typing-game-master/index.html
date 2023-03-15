@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <title>Brayden's Amazing Extravagant Typing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading" style="line-height: 1;">Brayden's Amazing<br> Extravagant<br> Typing Test</div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">60s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% Accuracy</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+    <h2 class="">There will be text that shows up in the Red box below,<br> that is what you will type during your test.</h2>
+    <h2 class="">Right when you click in the text area below, the test will begin!</h2>
+    <h2 class="">CAPTIAL LETTERS ARE REQUIRED, MAKE SURE YOU ARE DILIGENT.</h2>
+    <div class="quote">Click on the area below to start the test.</div>
+    <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()"
+      onfocus="startGame()"></textarea>
+    <button class="restart_btn" onclick="resetValues()">Restart</button>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
